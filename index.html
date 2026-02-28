@@ -3,112 +3,144 @@
 <head>
   <meta charset="UTF-8">
   <title>Musketeer – Triple & Quad Split</title>
+  <meta name="viewport" content="width=device-width, initial-scale=1">
   <style>
     body {
       font-family: system-ui, -apple-system, BlinkMacSystemFont, sans-serif;
-      max-width: 700px;
+      max-width: 760px;
       margin: 60px auto;
       padding: 20px;
-      line-height: 1.6;
+      line-height: 1.65;
       background: #111;
       color: #eee;
     }
-    h1 { font-size: 28px; }
-    h2 { margin-top: 0; }
-    h3 { margin-top: 18px; }
+    h1 { font-size: 30px; margin-bottom: 6px; }
+    .sub { color: rgba(255,255,255,0.75); margin-top: 0; }
     .card {
       background: #1a1a1a;
       padding: 20px;
       border-radius: 12px;
-      margin-top: 20px;
+      margin-top: 18px;
+      border: 1px solid rgba(255,255,255,0.06);
     }
-    a { color: #7db8ff; }
+    a { color: #7db8ff; text-decoration: none; }
+    a:hover { text-decoration: underline; }
     strong { color: #fff; }
+    .row { display: grid; grid-template-columns: 1fr; gap: 10px; }
+    label { display:block; font-size: 13px; color: rgba(255,255,255,0.75); margin-bottom: 4px; }
+    input, textarea {
+      width: 100%;
+      box-sizing: border-box;
+      padding: 10px 12px;
+      border-radius: 10px;
+      border: 1px solid rgba(255,255,255,0.10);
+      background: #151515;
+      color: #eee;
+      outline: none;
+    }
+    textarea { min-height: 120px; resize: vertical; }
+    .btn {
+      display: inline-block;
+      padding: 10px 14px;
+      border-radius: 12px;
+      border: 1px solid rgba(255,255,255,0.14);
+      background: linear-gradient(180deg, rgba(255,255,255,0.12), rgba(255,255,255,0.04));
+      color: #eee;
+      cursor: pointer;
+    }
+    .btn:hover { filter: brightness(1.08); }
+    .hint { font-size: 12px; color: rgba(255,255,255,0.65); margin-top: 8px; }
+    .footer { margin-top: 18px; font-size: 12px; color: rgba(255,255,255,0.65); }
   </style>
 </head>
 <body>
 
 <h1>Musketeer</h1>
-<p>
-Musketeer is a premium Chrome extension that splits your browser into
-3 or 4 fully resizable windows.
-</p>
+<p class="sub">A premium Chrome extension that splits your browser into 3 or 4 fully resizable windows.</p>
 
 <div class="card">
-<h2>Pricing</h2>
-<p>
-Pro unlock: <strong>$3.99 one-time purchase</strong>.<br>
-No subscriptions.
-</p>
+  <h2>Pricing</h2>
+  <p>
+    Pro unlock: <strong>$3.99 one-time purchase</strong>.<br>
+    No subscriptions.
+  </p>
 </div>
 
 <div class="card">
-<h2>Support</h2>
-<p>
-Email: support.musketeer@proton.me
-</p>
+  <h2>Support</h2>
+  <p>
+    Email: <a href="mailto:musketeer.app@gmail.com">musketeer.app@gmail.com</a>
+  </p>
+  <p class="hint">
+    Prefer a form? Use the contact form below (opens your email app).
+  </p>
 </div>
 
 <div class="card">
-<h2>Refund Policy</h2>
-<p>
-Refunds are available within 7 days of purchase.
-Please contact support to request a refund.
-</p>
+  <h2>Refund Policy</h2>
+  <p>
+    Refunds are available within 7 days of purchase.
+    Please contact support to request a refund.
+  </p>
 </div>
 
 <div class="card">
-<h2>Privacy Policy</h2>
-
-<p><strong>Effective Date:</strong> February 27, 2026</p>
-
-<p>
-Musketeer respects your privacy. This Privacy Policy explains what information
-the extension does and does not collect.
-</p>
-
-<h3>1. Data Collection</h3>
-<p>
-Musketeer does <strong>not</strong> collect, transmit, sell, or share any personal data.
-The extension does not collect browsing history, website content, keystrokes,
-or personal identifiers.
-</p>
-
-<h3>2. Local Storage</h3>
-<p>
-Musketeer stores layout preferences (such as window positions and split ratios)
-locally on your device using Chrome's storage API. This data never leaves your device.
-</p>
-
-<h3>3. Payments</h3>
-<p>
-Pro purchases are processed securely by ExtensionPay. Musketeer does not receive
-or store credit card information. ExtensionPay may collect information necessary
-to process payments according to their own privacy policy.
-</p>
-
-<h3>4. Permissions</h3>
-<p>
-Musketeer requests Chrome permissions (tabs, windows, storage, and system.display)
-solely to enable window splitting functionality. These permissions are not used
-for tracking, analytics, or advertising.
-</p>
-
-<h3>5. Third-Party Services</h3>
-<p>
-Musketeer does not use analytics, tracking scripts, or advertising services.
-</p>
-
-<h3>6. Changes</h3>
-<p>
-If this Privacy Policy changes, the updated version will be posted on this page.
-</p>
-
-<p>
-If you have questions, contact: support.musketeer@proton.me
-</p>
-
+  <h2>Contact</h2>
+  <form id="contactForm">
+    <div class="row">
+      <div>
+        <label for="name">Name</label>
+        <input id="name" name="name" type="text" placeholder="Your name" autocomplete="name">
+      </div>
+      <div>
+        <label for="reply">Your Email</label>
+        <input id="reply" name="reply" type="email" placeholder="you@example.com" autocomplete="email">
+      </div>
+      <div>
+        <label for="subject">Subject</label>
+        <input id="subject" name="subject" type="text" placeholder="Support request">
+      </div>
+      <div>
+        <label for="message">Message</label>
+        <textarea id="message" name="message" placeholder="What can I help you with?"></textarea>
+      </div>
+    </div>
+    <div style="margin-top:12px;">
+      <button class="btn" type="submit">Open Email</button>
+      <div class="hint">
+        This button creates an email draft in your mail app. No data is sent to any server.
+      </div>
+    </div>
+  </form>
 </div>
+
+<div class="footer">
+  <a href="privacy.html">Privacy Policy</a>
+</div>
+
+<script>
+  (function() {
+    const form = document.getElementById('contactForm');
+    form.addEventListener('submit', function(e) {
+      e.preventDefault();
+      const name = (document.getElementById('name').value || '').trim();
+      const reply = (document.getElementById('reply').value || '').trim();
+      const subject = (document.getElementById('subject').value || 'Musketeer Support').trim();
+      const message = (document.getElementById('message').value || '').trim();
+
+      const lines = [];
+      if (name) lines.push('Name: ' + name);
+      if (reply) lines.push('Reply-to: ' + reply);
+      if (name || reply) lines.push('');
+      lines.push(message);
+
+      const body = encodeURIComponent(lines.join('\n'));
+      const mailSubject = encodeURIComponent(subject);
+
+      window.location.href = 'mailto:musketeer.app@gmail.com?subject=' + mailSubject + '&body=' + body;
+    });
+  })();
+</script>
 
 </body>
 </html>
