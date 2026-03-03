@@ -15,6 +15,20 @@
       color: #eee;
     }
     h1 { font-size: 30px; margin-bottom: 6px; }
+
+    /* Logo */
+    .logo-wrap {
+      display: flex;
+      justify-content: center;
+      margin-bottom: 14px;
+    }
+    .logo {
+      width: 72px;
+      height: 72px;
+      border-radius: 18px;
+      box-shadow: 0 10px 30px rgba(0,0,0,0.45);
+    }
+
     .sub { color: rgba(255,255,255,0.75); margin-top: 0; }
     .card {
       background: #1a1a1a;
@@ -54,6 +68,10 @@
   </style>
 </head>
 <body>
+
+<div class="logo-wrap">
+  <img src="128.png" alt="Musketeer logo" class="logo">
+</div>
 
 <h1>Musketeer</h1>
 <p class="sub">A premium Chrome extension that splits your browser into 3 or 4 fully resizable windows.</p>
