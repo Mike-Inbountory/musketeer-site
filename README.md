@@ -1,3 +1,7 @@
+<p align="center">
+  <img src="128.png" width="120" alt="Musketeer logo">
+</p>
+
 # Musketeer Website
 
 This repository contains the source for the official Musketeer extension website.
