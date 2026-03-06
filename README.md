@@ -1,6 +1,20 @@
 <p align="center">
-  <img src="128.png" width="120" alt="Musketeer logo">
+  <img src="128.png" width="120" alt="Musketeer Logo">
 </p>
+
+<h1 align="center">Musketeer</h1>
+
+<p align="center">
+Split Chrome into clean, resizable 3 or 4 window layouts.
+</p>
+
+<p align="center">
+  <a href="https://chromewebstore.google.com/">
+    <img src="https://img.shields.io/badge/Chrome%20Web%20Store-Install-blue?style=for-the-badge&logo=googlechrome">
+  </a>
+</p>
+
+---
 
 # Musketeer Website
 
