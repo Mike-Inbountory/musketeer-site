@@ -9,7 +9,7 @@ Split Chrome into clean, resizable 3 or 4 window layouts.
 </p>
 
 <p align="center">
-  <a href="https://chromewebstore.google.com/">
+  <a href="[https://chromewebstore.google.com/](https://chromewebstore.google.com/detail/musketeer-%E2%80%93-3-window-spli/noinglapjoklgmflpegdnmdonecjgcop)">
     <img src="https://img.shields.io/badge/Chrome%20Web%20Store-Install-blue?style=for-the-badge&logo=googlechrome">
   </a>
 </p>
