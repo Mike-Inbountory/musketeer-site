@@ -16,6 +16,10 @@ Split Chrome into clean, resizable 3 or 4 window layouts.
 
 ---
 
+<p align="center">
+  <img src="assets/preview.png" alt="Musketeer Preview">
+</p>
+
 ## Website
 
 This repository contains the source for the official Musketeer website.
