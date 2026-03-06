@@ -9,40 +9,44 @@ Split Chrome into clean, resizable 3 or 4 window layouts.
 </p>
 
 <p align="center">
-  <a href="[https://chromewebstore.google.com/](https://chromewebstore.google.com/detail/musketeer-%E2%80%93-3-window-spli/noinglapjoklgmflpegdnmdonecjgcop)">
+  <a href="https://chromewebstore.google.com/detail/musketeer-–-3-window-spli/noinglapjoklgmflpegdnmdonecjgcop">
     <img src="https://img.shields.io/badge/Chrome%20Web%20Store-Install-blue?style=for-the-badge&logo=googlechrome">
   </a>
 </p>
 
 ---
 
-# Musketeer Website
+## Website
 
-This repository contains the source for the official Musketeer extension website.
+This repository contains the source for the official Musketeer website.
 
 The site provides:
 
-- Product information
-- Pricing details
-- Support contact
-- Privacy policy
+- Product information  
+- Pricing details  
+- Support contact  
+- Privacy policy  
+
+Live site:
+
+https://mike-inbountory.github.io/musketeer-site/
+
+---
 
 ## About Musketeer
 
-Musketeer is a Chrome extension that splits your browser into structured layouts for multitasking.
+Musketeer is a Chrome extension designed for focused multitasking.  
+It allows you to split your browser window into structured layouts and save them as reusable workspaces.
 
-Features include:
+### Features
 
-- 3-window split layouts
-- 4-window split layouts (Pro)
+- 3 Window Split
+- 4 Window Split (Pro)
 - Resizable layout control
-- Workspace saving and restore
+- Save workspaces (Pro)
+- Restore workspaces instantly (Pro)
 
-## Install the Extension
-
-Install Musketeer from the Chrome Web Store:
-
-https://chrome.google.com/webstore
+---
 
 ## Support
 
@@ -50,22 +54,14 @@ For support or refund requests:
 
 musketeer.app@gmail.com
 
+---
+
 ## Privacy
 
-Musketeer does not collect personal data.
+Musketeer does **not collect personal data**.
 
-- No tracking
 - No analytics
+- No tracking
 - No browsing history access
 
-All settings are stored locally using Chrome's storage API.
-
-## Website
-
-The live site is hosted using GitHub Pages:
-
-https://mike-inbountory.github.io/musketeer-site/
-
-## License
-
-All rights reserved.
+All settings and workspaces are stored locally using Chrome's storage API.
