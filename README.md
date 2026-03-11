@@ -33,7 +33,7 @@ The site provides:
 
 Live site:
 
-https://mike-inbountory.github.io/musketeer-site/
+musketeerapp.com
 
 ---
 
