@@ -33,7 +33,7 @@ The site provides:
 
 Live site:
 
-https/:musketeerapp.com
+https//:musketeerapp.com
 
 ---
 
