@@ -2,8 +2,6 @@
   <img src="banner.png" alt="Musketeer Logo">
 </p>
 
-<h1 align="center">Musketeer</h1>
-
 <p align="center">
 Split Chrome into clean, resizable 3 or 4 window layouts.
 </p>
