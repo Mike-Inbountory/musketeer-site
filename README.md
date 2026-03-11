@@ -1,5 +1,5 @@
 <p align="center">
-  <img src="icons/128.png" width="120" alt="Musketeer Logo">
+  <img src="banner.png" width="120" alt="Musketeer Logo">
 </p>
 
 <h1 align="center">Musketeer</h1>
