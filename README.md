@@ -17,7 +17,7 @@ Split Chrome into clean, resizable 3 or 4 window layouts.
 ---
 
 <p align="center">
-  <img src="preview.png" alt="Musketeer Preview">
+  <img src="image.png" alt="Musketeer Preview">
 </p>
 
 ## Website
