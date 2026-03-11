@@ -44,7 +44,6 @@
       filter: brightness(1.06);
     }
 
-    /* Logo */
     .logo-wrap {
       display: flex;
       justify-content: center;
@@ -68,31 +67,14 @@
     a { color: #7db8ff; text-decoration: none; }
     a:hover { text-decoration: underline; }
     strong { color: #fff; }
-    .row { display: grid; grid-template-columns: 1fr; gap: 10px; }
-    label { display:block; font-size: 13px; color: rgba(255,255,255,0.75); margin-bottom: 4px; }
-    input, textarea {
-      width: 100%;
-      box-sizing: border-box;
-      padding: 10px 12px;
-      border-radius: 10px;
-      border: 1px solid rgba(255,255,255,0.10);
-      background: #151515;
-      color: #eee;
-      outline: none;
+    .footer {
+      margin-top: 18px;
+      font-size: 12px;
+      color: rgba(255,255,255,0.65);
+      display: flex;
+      gap: 14px;
+      flex-wrap: wrap;
     }
-    textarea { min-height: 120px; resize: vertical; }
-    .btn {
-      display: inline-block;
-      padding: 10px 14px;
-      border-radius: 12px;
-      border: 1px solid rgba(255,255,255,0.14);
-      background: linear-gradient(180deg, rgba(255,255,255,0.12), rgba(255,255,255,0.04));
-      color: #eee;
-      cursor: pointer;
-    }
-    .btn:hover { filter: brightness(1.08); }
-    .hint { font-size: 12px; color: rgba(255,255,255,0.65); margin-top: 8px; }
-    .footer { margin-top: 18px; font-size: 12px; color: rgba(255,255,255,0.65); }
   </style>
 </head>
 <body>
@@ -115,7 +97,7 @@
     No subscriptions.
   </p>
 </div>
-  
+
 <div class="card">
   <h2>Pro Features</h2>
   <ul>
@@ -135,48 +117,15 @@
       Fine-tune pane sizes using the layout controller.</li>
   </ul>
 </div>
-  
+
 <div class="card">
-  <h2>Support</h2>
+  <h2>Need Help?</h2>
   <p>
-    Email: <a href="mailto:musketeer.app@gmail.com">musketeer.app@gmail.com</a>
-  </p>
-  <p class="hint">
-    Prefer a form? Use the contact form below (opens your email app).
+    Visit the <a href="support/">support page</a> for contact info, the support form, and refund help.
   </p>
 </div>
 
 <div class="card">
-  <h2>Contact</h2>
-  <form id="contactForm">
-    <div class="row">
-      <div>
-        <label for="name">Name</label>
-        <input id="name" name="name" type="text" placeholder="Your name" autocomplete="name">
-      </div>
-      <div>
-        <label for="reply">Your Email</label>
-        <input id="reply" name="reply" type="email" placeholder="you@example.com" autocomplete="email">
-      </div>
-      <div>
-        <label for="subject">Subject</label>
-        <input id="subject" name="subject" type="text" placeholder="Support request">
-      </div>
-      <div>
-        <label for="message">Message</label>
-        <textarea id="message" name="message" placeholder="What can I help you with?"></textarea>
-      </div>
-    </div>
-    <div style="margin-top:12px;">
-      <button class="btn" type="submit">Open Email</button>
-      <div class="hint">
-        This button creates an email draft in your mail app. No data is sent to any server.
-      </div>
-    </div>
-  </form>
-</div>
-
-  <div class="card">
   <h2>Refund Policy</h2>
   <p>
     Refunds are available within 7 days of purchase.
@@ -186,31 +135,8 @@
 
 <div class="footer">
   <a href="privacy.html">Privacy Policy</a>
+  <a href="support/">Support</a>
 </div>
-
-<script>
-  (function() {
-    const form = document.getElementById('contactForm');
-    form.addEventListener('submit', function(e) {
-      e.preventDefault();
-      const name = (document.getElementById('name').value || '').trim();
-      const reply = (document.getElementById('reply').value || '').trim();
-      const subject = (document.getElementById('subject').value || 'Musketeer Support').trim();
-      const message = (document.getElementById('message').value || '').trim();
-
-      const lines = [];
-      if (name) lines.push('Name: ' + name);
-      if (reply) lines.push('Reply-to: ' + reply);
-      if (name || reply) lines.push('');
-      lines.push(message);
-
-      const body = encodeURIComponent(lines.join('\n'));
-      const mailSubject = encodeURIComponent(subject);
-
-      window.location.href = 'mailto:musketeer.app@gmail.com?subject=' + mailSubject + '&body=' + body;
-    });
-  })();
-</script>
 
 </body>
 </html>
