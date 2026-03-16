@@ -14,8 +14,14 @@
       background: #111;
       color: #eee;
     }
-    h1 { font-size: 30px; margin-bottom: 6px; }
-    .sub { color: rgba(255,255,255,0.75); margin-top: 0; }
+    h1 {
+      font-size: 30px;
+      margin-bottom: 6px;
+    }
+    .sub {
+      color: rgba(255,255,255,0.75);
+      margin-top: 0;
+    }
     .card {
       background: #1a1a1a;
       padding: 20px;
@@ -23,11 +29,45 @@
       margin-top: 18px;
       border: 1px solid rgba(255,255,255,0.06);
     }
-    a { color: #7db8ff; text-decoration: none; }
-    a:hover { text-decoration: underline; }
-    strong { color: #fff; }
-    h3 { margin-top: 18px; }
-    .footer { margin-top: 18px; font-size: 12px; color: rgba(255,255,255,0.65); }
+    a {
+      color: #7db8ff;
+      text-decoration: none;
+    }
+    a:hover {
+      text-decoration: underline;
+    }
+    strong {
+      color: #fff;
+    }
+    h3 {
+      margin-top: 24px;
+      margin-bottom: 10px;
+      font-size: 16px;
+      font-weight: 700;
+      color: #fff;
+      display: flex;
+      align-items: center;
+      gap: 10px;
+    }
+    .secnum {
+      display: inline-flex;
+      align-items: center;
+      justify-content: center;
+      width: 24px;
+      height: 24px;
+      border-radius: 999px;
+      background: rgba(125,184,255,0.14);
+      border: 1px solid rgba(125,184,255,0.35);
+      color: #9dcbff;
+      font-size: 12px;
+      font-weight: 700;
+      flex: 0 0 24px;
+    }
+    .footer {
+      margin-top: 18px;
+      font-size: 12px;
+      color: rgba(255,255,255,0.65);
+    }
   </style>
 </head>
 <body>
@@ -43,14 +83,14 @@
     the extension accesses, stores, and does not share.
   </p>
 
-  <h3>1. What Musketeer Does Not Do</h3>
+  <h3><span class="secnum">1</span>What Musketeer Does Not Do</h3>
   <p>
     Musketeer does not sell your personal information, does not use your data for
     advertising, and does not include third-party tracking code inside the extension
     itself. Musketeer does not collect keystrokes, passwords, form inputs, or page content.
   </p>
 
-  <h3>2. Information Stored Locally on Your Device</h3>
+  <h3><span class="secnum">2</span>Information Stored Locally on Your Device</h3>
   <p>
     Musketeer stores certain data locally using Chrome's extension storage in order
     to provide its core features. This may include:
@@ -67,7 +107,7 @@
     or by uninstalling the extension.
   </p>
 
-  <h3>3. How Musketeer Uses Tab and Window Data</h3>
+  <h3><span class="secnum">3</span>How Musketeer Uses Tab and Window Data</h3>
   <p>
     Musketeer uses tab, window, storage, and display information only to power features
     such as splitting tabs into windows, restoring saved workspaces, combining windows
@@ -77,7 +117,7 @@
     Musketeer does not use this information for advertising, profiling, or unrelated purposes.
   </p>
 
-  <h3>4. Payments and Pro Features</h3>
+  <h3><span class="secnum">4</span>Payments and Pro Features</h3>
   <p>
     Pro purchases are processed by ExtensionPay. Musketeer does not receive or store
     full payment card details. ExtensionPay may process account or transaction-related
@@ -87,7 +127,7 @@
     Musketeer may locally cache whether Pro is active so that Pro features can work properly.
   </p>
 
-  <h3>5. Permissions</h3>
+  <h3><span class="secnum">5</span>Permissions</h3>
   <p>
     Musketeer requests the following Chrome permissions:
   </p>
@@ -102,7 +142,7 @@
     advertising or unrelated tracking.
   </p>
 
-  <h3>6. Analytics and Third-Party Services</h3>
+  <h3><span class="secnum">6</span>Analytics and Third-Party Services</h3>
   <p>
     Musketeer does not include third-party analytics, advertising, or tracking code
     inside the extension itself.
@@ -116,7 +156,7 @@
     Musketeer does not use these services to track your browsing activity within the extension.
   </p>
 
-  <h3>7. Sharing of Information</h3>
+  <h3><span class="secnum">7</span>Sharing of Information</h3>
   <p>
     Musketeer does not transmit your saved workspace data, tab URLs, layout data, or
     browsing activity to the developer. Except for payment processing through ExtensionPay
@@ -124,20 +164,20 @@
     does not share your information with third parties.
   </p>
 
-  <h3>8. Data Retention and Control</h3>
+  <h3><span class="secnum">8</span>Data Retention and Control</h3>
   <p>
     Data stored by Musketeer remains on your device until you remove it. You can clear
     saved workspaces and preferences within the extension, clear extension storage through
     Chrome, or uninstall the extension to remove locally stored data.
   </p>
 
-  <h3>9. Policy Changes</h3>
+  <h3><span class="secnum">9</span>Policy Changes</h3>
   <p>
     If this Privacy Policy changes, the updated version will be posted on this page with
     a revised effective date.
   </p>
 
-  <h3>10. Contact</h3>
+  <h3><span class="secnum">10</span>Contact</h3>
   <p>
     If you have questions or concerns about this Privacy Policy, contact:
     <a href="mailto:musketeer.app@gmail.com">musketeer.app@gmail.com</a>
